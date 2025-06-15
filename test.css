@@ -73,4 +73,95 @@
     color: #ddd;
     line-height: 1.5;
   }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f7f8fa;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: #111;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+  
+  .navbar nav a.active,
+  .navbar nav a:hover {
+    background-color: #ffffff;
+    color: #111;
+  }
+  
+  .review-section {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .review-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .review-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .review-card h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .review-card .stars {
+    color: #fbbf24; /* gold */
+    margin: 8px 0;
+    font-size: 18px;
+  }
+  
+  .review-card p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .reviews {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .review-section h1 {
+      font-size: 28px;
+    }
+  }
   
